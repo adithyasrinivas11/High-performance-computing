@@ -13,7 +13,8 @@ int main(int argc, char* argv[])
 		//printf("%f   %f\n",a[i],b[i]);
 	}	
 	
-	
+	double d,e,dd,ee,ddd,eee,q,w,qq,ww;
+	double d1,e1,dd1,ee1,ddd1,eee1,q1,w1,qq1,ww1;
 	// Beginning of parallel region 
 	double start, end;
   	start = omp_get_wtime();
@@ -25,9 +26,16 @@ int main(int argc, char* argv[])
 /*		printf("Hello World... from thread = %d  \n", num+1);*/
 /*		 for(int i=num*width;i<(num+1)*width && i<256;i++)*/
 /*		 	c[i]=a[i]+b[i];*/
-
-		for(int i=0;i<100000;i=i++)
-		 	c[i]=a[i]+b[i];
+		#pragma omp for
+		for(int i=0;i<100000;i++)
+		 	{
+		 	for(int j=0;j<100000;j++)
+		 	{
+		 	d=a[i]+a[i]+a[i]+a[i]+a[i]+a[i]+a[i]+a[i]+a[i];
+		 	//printf("%d  %d\n",i,j);
+		 	}
+		}
+		 	
 	} 
 	// Ending of parallel region 
 	end = omp_get_wtime();
