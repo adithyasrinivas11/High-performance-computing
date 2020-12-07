@@ -17,9 +17,7 @@ lab5 : a) matrix addition b) matrix multiplication (column major) c)matrix multi
 
 lab6 : a)sum of N array elements b)dot product using  and Reduction
 
-CUDA
-
-OPENMP 
+CUDA 
 
 lab7 : hello world b) vector addition c)vector multiplication
 
