@@ -23,6 +23,6 @@ lab7 : hello world b) vector addition c)vector multiplication
 
 lab8 : a) matrix addition b) matrix multiplication (column major) c)matrix multiplication using blocking
 
-lab9 : a)sum od N array elements b)dot product using critcal section and Reduction
+lab9 : a)sum of N array elements b)dot product using critcal section and Reduction
 
-lab10: profiling of kmeans clustering code using grof
+lab10: profiling of kmeans clustering code using gprof
